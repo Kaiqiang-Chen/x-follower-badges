@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X 粉丝数</title><link rel="stylesheet" href="popup.css"></head>
+<body><header><span class="logo">𝕏</span><div><h1>X 粉丝数</h1><p>认识信息流里的每一个人</p></div></header>
+<main><label class="row"><span>显示粉丝标签</span><input id="enabled" type="checkbox" role="switch"></label>
+<label class="row"><span>时间线快捷关注</span><input id="followEnabled" type="checkbox" role="switch"></label>
+<label class="row"><span>数字格式</span><select id="format"><option value="compact">简洁 · 17.4万</option><option value="exact">完整 · 174,000</option></select></label>
+<div class="preview">示例用户 <span>粉丝 17.4万</span></div>
+<p id="status" aria-live="polite">正在读取页面状态…</p>
+<p class="note">安装后请刷新 X 页面。标签来自页面已加载的数据；未返回粉丝数的账号暂不显示。悬停标签可查看完整数字。</p></main>
+<footer>本地处理 · 原生关注 · 无 API Key</footer><script src="popup.js"></script></body></html>

@@ -1,0 +1,63 @@
+/* Compact badge, aligned with X's existing author/verification row. */
+.xfb-badge {
+  display: inline-flex !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  align-self: center !important;
+  flex: 0 0 auto !important;
+  height: 18px !important;
+  margin: 0 4px !important;
+  padding: 0 5px !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  background: rgba(29, 155, 240, .10) !important;
+  color: #1d9bf0 !important;
+  font: 600 11px/18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+}
+
+.xfb-name-row { flex-direction: row !important; align-items: center !important; }
+
+.xfb-follow {
+  display: inline-flex !important;
+  align-self: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 auto !important;
+  box-sizing: border-box !important;
+  height: 20px !important;
+  margin: 0 4px 0 0 !important;
+  padding: 0 6px !important;
+  border: 1px solid rgba(29,155,240,.4) !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: #1d9bf0 !important;
+  font: 600 11px/18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+.xfb-follow:hover:not(:disabled) { background: rgba(29,155,240,.12) !important; }
+.xfb-follow:focus-visible { outline: 2px solid #1d9bf0 !important; outline-offset: 2px !important; }
+.xfb-follow:disabled { cursor: default !important; opacity: .65 !important; }
+.xfb-follow[data-state="done"] { border-color: transparent !important; color: #536471 !important; }
+.xfb-toast {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  bottom: 36px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  max-width: min(420px, 90vw) !important;
+  padding: 12px 18px !important;
+  background: #1d9bf0 !important;
+  color: white !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px #0003 !important;
+  font: 14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+}
+.xfb-follow[data-state="done"]:hover:not(:disabled) {
+  color: #f4212e !important;
+  border-color: rgba(244,33,46,.4) !important;
+  background: rgba(244,33,46,.08) !important;
+}
+.xfb-follow[data-mutual="true"] { color: #00875a !important; border-color: rgba(0,135,90,.25) !important; }
